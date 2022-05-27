@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color2"
+    tools:context=".HomepageActivity">
+
+
+    <Button
+        android:id="@+id/controlHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:onClick="buttonclicked"
+        android:text="Smart Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasTextView" />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/tempTextView"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextView" />
+
+    <TextView
+        android:id="@+id/humidText"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/humidTextView"
+        app:layout_constraintTop_toBottomOf="@+id/tempText" />
+
+    <TextView
+        android:id="@+id/motionText"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/motionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/humidText" />
+
+    <TextView
+        android:id="@+id/gasText"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/gasTextView"
+        app:layout_constraintTop_toBottomOf="@+id/motionText" />
+
+    <TextView
+        android:id="@+id/usernameTextViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="username"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="sans-serif"
+        android:text="SMART SECURITY"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:text="Current Temperature"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextView" />
+
+    <TextView
+        android:id="@+id/humidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Humidity"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempTextView" />
+
+    <TextView
+        android:id="@+id/motionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Motion Status"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidTextView" />
+
+    <TextView
+        android:id="@+id/gasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Gas Leakage"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motionTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
